@@ -4,6 +4,9 @@ This repository contains the official **Windows installer files only** for PCssa
 
 PCssak Palette began with a color-blind creator's need to verify color choices without guessing. It helps designers build local OKLCH color systems and review WCAG 2.2 contrast, approximate color-vision simulations, and UI role-color confusion risks.
 
+> [!WARNING]
+> The Windows Setup file is not yet Authenticode-signed. Windows may show an Unknown publisher or Microsoft Defender SmartScreen notice. Download only from `palette.pcssak.com` or this official `pcssakinc` repository and verify `SHA256SUMS.txt` before running it.
+
 ## Early Access
 
 - The current public build is a **free beta**. It does not include a paid Pro entitlement or payment.

@@ -1,57 +1,114 @@
-# PCssak Palette - Official Downloads
+# PCssak Palette - Official Windows Downloads
 
-This repository contains the official **Windows installer files only** for PCssak Palette. The application source code is not published here.
+[한국어](README.ko.md) · [Product website](https://palette.pcssak.com) · [User guide](https://pcssak.com/guide) · [Latest release](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
 
-PCssak Palette began with a color-blind creator's need to verify color choices without guessing. It helps designers build local OKLCH color systems and review WCAG 2.2 contrast, approximate color-vision simulations, and UI role-color confusion risks.
+**Build an accessible-minded color system without guessing.** Start from one HEX color or a
+local image, generate an 11-step OKLCH ramp, review contrast and approximate color-vision
+confusion risks, then save CSS.
 
-It is the first public product from **PCSSAK**, an independent software brand building focused, understandable Windows tools for real PC problems. [Visit PCSSAK](https://pcssak.com)
+![Actual PCssak Palette application showing an OKLCH ramp and validation workflow](https://pcssak.com/images/palette/overview.en.webp)
+
+> **Repository scope:** This is the official public binary distribution, documentation, and
+> issue-tracking repository. The PCssak Palette application source is private and proprietary;
+> this repository is public but is not an open-source code release.
+
+## Download
+
+Download only from the [latest official release](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
+or from [palette.pcssak.com](https://palette.pcssak.com/download).
+
+- Choose **x64** for normal 64-bit Windows 11 or Windows 10 PCs.
+- Use **x86** only for a 32-bit Windows 10 installation.
+- Compare the installer filename and SHA-256 with `SHA256SUMS.txt` in the release.
 
 > [!WARNING]
-> The Windows Setup file is not yet Authenticode-signed, so Windows may show an Unknown publisher or Microsoft Defender SmartScreen notice.
-> 1. Download only from `palette.pcssak.com` or this official repository and compare the filename and `SHA256SUMS.txt`.
-> 2. On **Windows protected your PC**, select **More info**.
-> 3. Confirm that the app name is **PCssak Palette**.
-> 4. Choose **Run anyway** only when the source, filename, and SHA-256 all match. Otherwise, cancel and delete the file.
->
-> Do not disable SmartScreen or Microsoft Defender.
+> The first installer is not yet Windows Authenticode-signed. Windows can show **Unknown
+> publisher** or **Microsoft Defender SmartScreen**. Download only from the official locations,
+> verify the filename and SHA-256, select **More info**, confirm **PCssak Palette**, and choose
+> **Run anyway** only when everything matches. Do not disable SmartScreen or Defender.
+
+## Why it exists
+
+The founder is a Korean solo developer with a color-vision deficiency that makes cyan and green
+difficult to distinguish. The first idea was a small tool for finding and comparing the same
+color more reliably. It grew into a local workflow that answers objective questions about color
+without pretending software can decide what is beautiful.
+
+Read the full [project story](docs/PROJECT-STORY.md).
+
+## What the current Free beta does
+
+1. Enter a HEX color or extract dominant colors from a local PNG, JPEG, WebP, GIF, or BMP.
+2. Generate a deterministic OKLCH ramp with steps from 50 through 950.
+3. Review WCAG contrast, light/dark UI previews, approximate protan/deutan/tritan/monochrome
+   views, Palette Doctor findings, and semantic role-color confusion risks.
+4. Correct role colors manually, use basic WCAG AA ramp correction, and undo supported repairs.
+5. Copy or save CSS/OKLCH CSS, store up to 10 palettes, and back up the library as JSON.
+
+Pro purchasing is **not available** in the public beta. Future Pro is reserved for batch role
+repair, full contrast matrices, reports, advanced framework/token formats, ASE, Export Pack,
+and a larger library.
+
+## Safety and privacy
+
+- Images, colors, palettes, validation, and exports are processed on the device.
+- There is no PCSSAK account, advertising, analytics, tracking, or automatic crash upload.
+- Standalone beta builds connect to the official GitHub release only for signed update checks
+  and downloads that the user accepts.
+- The updater verifies a PCSSAK Tauri signature. Each release also publishes SHA-256 values.
+- Image size, pixel count, decoder allocation, file type, CSS output, and JSON backup boundaries
+  are revalidated in the native Rust layer.
+- Public binaries default to Free; Pro-only native operations use a separate entitlement check.
+- Third-party licenses and source locations are bundled in `THIRD-PARTY-NOTICES.txt`.
+
+These controls reduce risk but do not mean defects are impossible. See
+[Quality and safety](docs/QUALITY-AND-SAFETY.md), [Known limitations](docs/KNOWN-LIMITATIONS.md),
+[Privacy](https://palette.pcssak.com/privacy), and the [EULA](https://palette.pcssak.com/eula).
+
+## Human-directed, AI-assisted
+
+PCssak Palette is independently designed and maintained by a solo developer in South Korea. AI
+assistants are used to accelerate research, implementation, review, testing, and documentation.
+Final requirements, technical decisions, release approval, and maintenance remain under human
+control. We do not ship changes that we cannot explain, test, or maintain.
+
+The detailed acceptance rules are public in the
+[AI-assisted development policy](docs/AI-DEVELOPMENT-POLICY.md).
 
 ## Early Access
 
-- The current public build is a **free beta**. It does not include a paid Pro entitlement or payment.
-- Free completes palette creation, full objective diagnosis, manual role-color correction, and basic CSS/OKLCH CSS file delivery. Pro batch automation and professional formats remain locked until the paid Store launch.
-- Features and layouts may change before version 1.0, and undiscovered defects may remain.
-- It is a design aid, not accessibility certification or medical diagnosis.
-- Images, colors, and palettes are processed on your device. The standalone beta connects to GitHub only for signed update checks and downloads.
-- The updater verifies PCSSAK's Tauri signature. The installer is not yet Windows Authenticode-signed, so Windows may display an Unknown publisher or SmartScreen warning.
-- Officially verified: Windows 11 x64. Beta test support: Windows 10 22H2 x64 and x86.
+- Current status: **Free Early Access**, version below 1.0.
+- Officially verified environment: Windows 11 Home/Pro x64 with current updates.
+- Beta test support: Windows 10 Home/Pro 22H2 x64 and x86.
+- Not currently shipped: native ARM64, Windows S mode, macOS, or Linux.
+- CVD views are approximations, not medical diagnosis.
+- Contrast results apply to the indicated pair; they are not whole-product accessibility
+  certification.
+- Interfaces, translations, and file behavior may change before 1.0, and undiscovered defects
+  may remain.
 
-Download from the [latest release](../../releases/latest) and compare the installer with `SHA256SUMS.txt` when possible.
+## Help improve the beta
 
-## 한국어 안내
+- Use the [bug report form](../../issues/new?template=bug-report.yml) for a reproducible defect.
+- Use the [feature request form](../../issues/new?template=feature-request.yml) to describe the
+  user problem before proposing a solution.
+- Read [Support](SUPPORT.md) before attaching files or logs.
+- Report exploitable security details privately under [Security](SECURITY.md).
 
-이 저장소는 PCssak Palette의 **공식 Windows 설치 파일 전용**입니다. 소스 코드는 공개하지 않습니다.
+Reproducible reports, including reports prepared with AI assistance, must be checked by the
+reporter before submission. Please do not submit bulk-generated or unverified issues.
 
-PCssak Palette는 실제 PC 불편을 쉽고 신뢰할 수 있는 Windows 도구로 해결하는 **PCSSAK의 첫 공개 제품**입니다. [PCSSAK 홈페이지](https://pcssak.co.kr)
+## Documentation
 
-현재 배포본은 결제나 유료 Pro 권한이 없는 무료 Early Access 베타입니다. 이미지·색·팔레트는 기기에서 처리되며, 독립형 베타는 서명된 업데이트 확인과 다운로드에만 GitHub를 사용합니다. 아직 Authenticode 코드 서명이 없어 Windows에서 알 수 없는 게시자 또는 SmartScreen 경고가 표시될 수 있습니다. 반드시 이 공식 저장소나 `palette.pcssak.com`에서만 내려받고 가능하면 `SHA256SUMS.txt`를 확인하세요.
+- [Project story](docs/PROJECT-STORY.md)
+- [AI-assisted development policy](docs/AI-DEVELOPMENT-POLICY.md)
+- [Quality and safety](docs/QUALITY-AND-SAFETY.md)
+- [Known limitations](docs/KNOWN-LIMITATIONS.md)
+- [Support](SUPPORT.md)
+- [Security reporting](SECURITY.md)
+- [Contribution and issue conduct](CONTRIBUTING.md)
+- [Release notes](https://github.com/pcssakinc/pcssak-palette-releases/releases)
 
-경고가 나타나면 다음 순서로 확인하세요.
-
-1. 설치 파일 이름과 `SHA256SUMS.txt`의 SHA-256이 공식 다운로드 정보와 일치하는지 확인합니다.
-2. **Windows의 PC 보호** 화면에서 **추가 정보**를 선택합니다.
-3. 앱 이름이 **PCssak Palette**인지 확인합니다.
-4. 출처·파일 이름·SHA-256이 모두 맞을 때만 **실행** 또는 **그래도 실행**을 선택합니다. 하나라도 다르면 취소하고 파일을 삭제하세요.
-
-SmartScreen이나 Microsoft Defender를 끄거나 비활성화할 필요는 없습니다.
-
-Free는 팔레트 생성, 전체 객관 진단, 역할 색 직접 수정, CSS·OKLCH CSS 파일 저장까지 완결합니다. 역할 색 일괄 자동화와 전문 납품 형식은 유료 Store 출시 전까지 Pro로 잠겨 있습니다.
-
-- 공식 검증: Windows 11 64비트
-- 베타 시험 지원: Windows 10 22H2 64비트·32비트
-
-- Website: https://palette.pcssak.com
-- Privacy: https://palette.pcssak.com/privacy
-- EULA: https://palette.pcssak.com/eula
-- Support: pcssakinc@gmail.com
-
-The binaries are proprietary and licensed under the PCssak Palette EULA. Third-party open-source notices are bundled with the application.
+PCssak Palette binaries are licensed under the PCssak Palette EULA. Third-party open-source
+components remain under their own licenses. PCSSAK is an independent software brand and is not
+affiliated with or endorsed by the AI tool providers named in the project history.

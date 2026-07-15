@@ -1,50 +1,90 @@
-name: 오류 제보 / Bug report
-description: 재현 가능한 PCssak Palette 베타 오류를 알려주세요.
+name: Bug report / 버그 제보
+description: Report a reproducible PCssak Palette problem / 재현 가능한 문제를 알려주세요
 title: "[Bug] "
 labels:
   - bug
+  - needs-triage
 body:
   - type: markdown
     attributes:
       value: |
-        공개 양식입니다. 개인정보, 비밀번호, 고객 자료, 비공개 원본 디자인을 올리지 마세요.
+        Thank you for helping improve the Early Access beta. Search existing issues first and remove personal, customer, or confidential data. For an exploitable security issue, stop here and follow SECURITY.md instead.
+
+        Early Access 개선에 도움을 주셔서 감사합니다. 기존 이슈를 먼저 검색하고 개인정보·고객 자료·회사 비밀을 제거하세요. 악용 가능한 보안 문제는 공개하지 말고 SECURITY.md를 따르세요.
   - type: input
     id: app-version
     attributes:
-      label: 앱 버전 / App version
-      placeholder: 0.1.0
+      label: App version / 앱 버전
+      placeholder: "0.1.1"
     validations:
       required: true
-  - type: input
-    id: windows-version
+  - type: dropdown
+    id: architecture
     attributes:
-      label: Windows 버전과 비트 / Windows version and architecture
-      placeholder: Windows 11 24H2, 64-bit
+      label: Windows and architecture / Windows와 아키텍처
+      options:
+        - Windows 11 x64
+        - Windows 10 22H2 x64
+        - Windows 10 22H2 x86
+        - Other or unknown / 기타 또는 모름
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Install source / 설치 출처
+      options:
+        - palette.pcssak.com
+        - Official pcssakinc GitHub release
+        - Existing app update / 앱 내부 업데이트
+        - Other or unknown / 기타 또는 모름
     validations:
       required: true
   - type: textarea
-    id: steps
+    id: problem
     attributes:
-      label: 재현 순서 / Steps to reproduce
-      description: 문제가 생기기 전부터 순서대로 적어주세요.
-    validations:
-      required: true
-  - type: textarea
-    id: result
-    attributes:
-      label: 실제 결과 / Actual result
+      label: What happened? / 어떤 문제가 생겼나요?
+      description: Describe the actual result and user impact. / 실제 결과와 사용자 영향을 적어주세요.
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: 기대한 결과 / Expected result
+      label: Expected result / 기대한 결과
     validations:
       required: true
-  - type: checkboxes
-    id: privacy
+  - type: textarea
+    id: steps
     attributes:
-      label: 공개 정보 확인
+      label: Minimal reproduction steps / 최소 재현 절차
+      placeholder: |
+        1. Open...
+        2. Choose...
+        3. See...
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency / 발생 빈도
       options:
-        - label: 개인정보나 비공개 자료를 포함하지 않았습니다.
+        - Every time / 항상
+        - Often / 자주
+        - Sometimes / 가끔
+        - Once / 한 번
+    validations:
+      required: true
+  - type: textarea
+    id: safe-evidence
+    attributes:
+      label: Safe screenshot or error text / 안전한 화면이나 오류 문구
+      description: Do not attach original customer designs or sensitive files. / 고객 원본 디자인이나 민감한 파일은 첨부하지 마세요.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation / 확인
+      options:
+        - label: I reproduced this report and removed personal, secret, customer, and confidential data. / 직접 재현했고 개인정보·비밀정보·고객·회사 자료를 제거했습니다.
+          required: true
+        - label: This is not an exploitable security report. / 악용 가능한 보안 제보가 아닙니다.
           required: true

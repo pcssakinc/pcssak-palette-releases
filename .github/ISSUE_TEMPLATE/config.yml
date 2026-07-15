@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report / 보안 제보
+    url: https://palette.pcssak.com/support
+    about: Do not post exploitable details publicly. Follow SECURITY.md and contact PCSSAK privately. / 악용 가능한 내용은 공개하지 말고 SECURITY.md에 따라 비공개로 연락하세요.
+  - name: User guide / 사용설명서
+    url: https://pcssak.com/guide
+    about: Check installation, workflow, export, and troubleshooting guidance. / 설치·작업 흐름·내보내기·오류 해결 안내를 확인하세요.

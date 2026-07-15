@@ -1,6 +1,6 @@
 # PCssak Palette - Official Windows Downloads
 
-[한국어](README.ko.md) · [Product website](https://palette.pcssak.com) · [User guide](https://pcssak.com/guide) · [Latest release](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
+[한국어](README.ko.md) · [Product website](https://pcssak.com/palette) · [User guide](https://pcssak.com/guide) · [Latest release](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
 
 **Build an accessible-minded color system without guessing.** Start from one HEX color or a
 local image, generate an 11-step OKLCH ramp, review contrast and approximate color-vision
@@ -15,7 +15,7 @@ confusion risks, then save CSS.
 ## Download
 
 Download only from the [latest official release](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
-or from [palette.pcssak.com](https://palette.pcssak.com/download).
+or from the [PCSSAK PCssak Palette product page](https://pcssak.com/palette).
 
 - Choose **x64** for normal 64-bit Windows 11 or Windows 10 PCs.
 - Use **x86** only for a 32-bit Windows 10 installation.

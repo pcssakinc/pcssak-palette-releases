@@ -1,6 +1,6 @@
 # PCssak Palette - 공식 Windows 다운로드
 
-[English](README.md) · [제품 홈페이지](https://palette.pcssak.co.kr) · [사용설명서](https://pcssak.co.kr/guide) · [최신 릴리스](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
+[English](README.md) · [제품 홈페이지](https://pcssak.co.kr/palette) · [사용설명서](https://pcssak.co.kr/guide) · [최신 릴리스](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
 
 **색을 추측하지 않고 접근성까지 고려한 색상 시스템을 만듭니다.** HEX 색 하나 또는 내
 PC의 이미지에서 11단계 OKLCH 램프를 만들고, 대비와 색각이상 혼동 위험을 확인한 뒤
@@ -15,7 +15,7 @@ CSS로 저장합니다.
 ## 다운로드
 
 [최신 공식 릴리스](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)나
-[palette.pcssak.com](https://palette.pcssak.com/download)에서만 내려받으세요.
+[PCSSAK PCssak Palette 제품 페이지](https://pcssak.co.kr/palette)에서만 내려받으세요.
 
 - 일반적인 64비트 Windows 11·10 PC는 **x64**를 선택합니다.
 - **x86**은 32비트 Windows 10에서만 사용합니다.

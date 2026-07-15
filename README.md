@@ -5,7 +5,13 @@ This repository contains the official **Windows installer files only** for PCssa
 PCssak Palette began with a color-blind creator's need to verify color choices without guessing. It helps designers build local OKLCH color systems and review WCAG 2.2 contrast, approximate color-vision simulations, and UI role-color confusion risks.
 
 > [!WARNING]
-> The Windows Setup file is not yet Authenticode-signed. Windows may show an Unknown publisher or Microsoft Defender SmartScreen notice. Download only from `palette.pcssak.com` or this official repository, verify the filename and `SHA256SUMS.txt`, select **More info**, and choose **Run anyway** only when all details match. Do not disable SmartScreen.
+> The Windows Setup file is not yet Authenticode-signed, so Windows may show an Unknown publisher or Microsoft Defender SmartScreen notice.
+> 1. Download only from `palette.pcssak.com` or this official repository and compare the filename and `SHA256SUMS.txt`.
+> 2. On **Windows protected your PC**, select **More info**.
+> 3. Confirm that the app name is **PCssak Palette**.
+> 4. Choose **Run anyway** only when the source, filename, and SHA-256 all match. Otherwise, cancel and delete the file.
+>
+> Do not disable SmartScreen or Microsoft Defender.
 
 ## Early Access
 
@@ -24,6 +30,15 @@ Download from the [latest release](../../releases/latest) and compare the instal
 이 저장소는 PCssak Palette의 **공식 Windows 설치 파일 전용**입니다. 소스 코드는 공개하지 않습니다.
 
 현재 배포본은 결제나 유료 Pro 권한이 없는 무료 Early Access 베타입니다. 이미지·색·팔레트는 기기에서 처리되며, 독립형 베타는 서명된 업데이트 확인과 다운로드에만 GitHub를 사용합니다. 아직 Authenticode 코드 서명이 없어 Windows에서 알 수 없는 게시자 또는 SmartScreen 경고가 표시될 수 있습니다. 반드시 이 공식 저장소나 `palette.pcssak.com`에서만 내려받고 가능하면 `SHA256SUMS.txt`를 확인하세요.
+
+경고가 나타나면 다음 순서로 확인하세요.
+
+1. 설치 파일 이름과 `SHA256SUMS.txt`의 SHA-256이 공식 다운로드 정보와 일치하는지 확인합니다.
+2. **Windows의 PC 보호** 화면에서 **추가 정보**를 선택합니다.
+3. 앱 이름이 **PCssak Palette**인지 확인합니다.
+4. 출처·파일 이름·SHA-256이 모두 맞을 때만 **실행** 또는 **그래도 실행**을 선택합니다. 하나라도 다르면 취소하고 파일을 삭제하세요.
+
+SmartScreen이나 Microsoft Defender를 끄거나 비활성화할 필요는 없습니다.
 
 Free는 팔레트 생성, 전체 객관 진단, 역할 색 직접 수정, CSS·OKLCH CSS 파일 저장까지 완결합니다. 역할 색 일괄 자동화와 전문 납품 형식은 유료 Store 출시 전까지 Pro로 잠겨 있습니다.
 

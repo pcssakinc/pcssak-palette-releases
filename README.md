@@ -42,7 +42,8 @@ Read the full [project story](docs/PROJECT-STORY.md).
 2. Generate a deterministic OKLCH ramp with steps from 50 through 950.
 3. Review WCAG contrast, light/dark UI previews, approximate protan/deutan/tritan/monochrome
    views, Palette Doctor findings, and semantic role-color confusion risks.
-4. Correct role colors manually, use basic WCAG AA ramp correction, and undo supported repairs.
+4. Check an actual foreground/background pair against AA and AAA, then compare non-destructive
+   correction candidates that clearly identify which color would change.
 5. Copy or save CSS/OKLCH CSS, store up to 10 palettes, and back up the library as JSON.
 
 Pro purchasing is **not available** in the public beta. Future Pro is reserved for batch role
@@ -63,7 +64,8 @@ and a larger library.
 
 These controls reduce risk but do not mean defects are impossible. See
 [Quality and safety](docs/QUALITY-AND-SAFETY.md), [Known limitations](docs/KNOWN-LIMITATIONS.md),
-[Privacy](https://palette.pcssak.com/privacy), and the [EULA](https://palette.pcssak.com/eula).
+and the current Privacy and EULA links on the
+[PCssak Palette product page](https://pcssak.com/palette).
 
 ## Human-directed, AI-assisted
 

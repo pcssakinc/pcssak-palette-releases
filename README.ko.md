@@ -42,7 +42,7 @@ CSS로 저장합니다.
 2. 50부터 950까지 결정론적인 11단계 OKLCH 램프를 생성합니다.
 3. WCAG 대비, 라이트·다크 UI, 적·녹·청색맹 및 흑백 근사 보기, 팔레트 닥터와 역할 색
    혼동 위험을 확인합니다.
-4. 역할 색을 직접 수정하고 기본 WCAG AA 램프 보정과 지원되는 실행 취소를 사용합니다.
+4. 실제 글자색과 배경색의 AA·AAA 대비를 확인하고, 미달하면 어느 색을 바꾸는지 분명한 비파괴 수정 후보를 비교합니다.
 5. CSS·OKLCH CSS를 복사·저장하고 최대 10개 팔레트와 JSON 백업을 사용합니다.
 
 공개 베타에서는 Pro를 구매할 수 없습니다. 향후 Pro는 역할 색 일괄 보정, 전체 대비
@@ -61,8 +61,8 @@ CSS로 저장합니다.
 - 제3자 라이선스와 소스 위치는 앱의 `THIRD-PARTY-NOTICES.txt`에 포함합니다.
 
 이 장치들은 위험을 줄이지만 오류가 절대 없다는 뜻은 아닙니다. [품질과 안전](docs/QUALITY-AND-SAFETY.ko.md),
-[알려진 한계](docs/KNOWN-LIMITATIONS.ko.md), [개인정보처리방침](https://palette.pcssak.com/privacy),
-[이용약관](https://palette.pcssak.com/eula)을 확인하세요.
+[알려진 한계](docs/KNOWN-LIMITATIONS.ko.md)와 [PCssak Palette 제품 페이지](https://pcssak.co.kr/palette)에
+연결된 최신 개인정보처리방침·이용약관을 확인하세요.
 
 ## 사람이 지휘하고 AI가 보조합니다
 

@@ -42,7 +42,8 @@ Read the full [project story](docs/PROJECT-STORY.md).
 2. Generate a deterministic OKLCH ramp with steps from 50 through 950.
 3. Review WCAG contrast, light/dark UI previews, approximate protan/deutan/tritan/monochrome
    views, Palette Doctor findings, and semantic role-color confusion risks.
-4. Correct role colors manually, use basic WCAG AA ramp correction, and undo supported repairs.
+4. Check an actual foreground/background pair against AA and AAA, then compare non-destructive
+   correction candidates that clearly identify which color would change.
 5. Copy or save CSS/OKLCH CSS, store up to 10 palettes, and back up the library as JSON.
 
 Pro purchasing is **not available** in the public beta. Future Pro is reserved for batch role

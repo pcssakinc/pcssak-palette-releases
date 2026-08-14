@@ -13,7 +13,7 @@ Do not post public exploit details for update-signature bypass, entitlement bypa
 file access or write, malicious image processing, code execution, secret exposure, or another
 issue that could harm users.
 
-Email `pcssakinc@gmail.com` with:
+Email `support@pcssak.com` with:
 
 - PCssak Palette version, Windows version, and architecture;
 - impact and the conditions required to reproduce it;
@@ -31,7 +31,7 @@ after users have a safe update path. This is not a guaranteed response-time or b
 
 ## Authenticity checks
 
-- Download only from `palette.pcssak.com` or this official `pcssakinc` repository.
+- Download only from `palette.pcssak.com` or this official PCSSAK repository.
 - Compare release filenames and SHA-256 values with `SHA256SUMS.txt`.
 - The in-app updater verifies PCSSAK's Tauri update signature.
 - The first external installer is not yet Authenticode-signed; SmartScreen should not be
@@ -42,7 +42,7 @@ after users have a safe update path. This is not a guaranteed response-time or b
 보안 수정은 **최신 공개 Early Access 버전**을 기준으로 검토합니다. 업데이트 서명 우회,
 권한 검사 우회, 임의 파일 접근·쓰기, 악성 이미지 처리, 코드 실행, 비밀정보 노출처럼 사용자를
 위험하게 할 수 있는 문제는 공개 Issue에 상세 재현 방법을 올리지 말고
-`pcssakinc@gmail.com`으로 보내주세요.
+`support@pcssak.com`으로 보내주세요.
 
 앱·Windows 버전과 아키텍처, 영향, 최소 재현 조건, 이미 공개됐는지 여부와 안전한 연락 방법을
 포함하면 도움이 됩니다. 비밀번호, 결제 정보, 주민등록번호, 고객 자료, 회사 비공개 디자인,

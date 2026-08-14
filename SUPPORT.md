@@ -14,7 +14,7 @@ security, data-loss risk, and reproducibility rather than arrival order.
 
 Use the GitHub [bug form](../../issues/new?template=bug-report.yml) for reproducible application
 defects and the [feature form](../../issues/new?template=feature-request.yml) for a user problem
-that the product could solve. General help is also available at `pcssakinc@gmail.com`.
+that the product could solve. General help is also available at `support@pcssak.com`.
 
 Security issues that could be exploited must follow [SECURITY.md](SECURITY.md) and should not be
 posted publicly.
@@ -30,5 +30,5 @@ PCssak Palette는 1인 개발자가 운영합니다. 문의는 도착 순서만�
 제거하세요.
 
 재현 가능한 오류는 GitHub 버그 양식, 해결이 필요한 사용자 문제는 기능 제안 양식을 사용합니다.
-일반 문의는 `pcssakinc@gmail.com`으로 보낼 수 있습니다. 악용 가능한 보안 문제는 공개하지
+일반 문의는 `support@pcssak.com`으로 보낼 수 있습니다. 악용 가능한 보안 문제는 공개하지
 말고 `SECURITY.md` 절차를 따르세요.

@@ -35,7 +35,7 @@ body:
       label: Install source / 설치 출처
       options:
         - palette.pcssak.com
-        - Official pcssakinc GitHub release
+        - Official PCSSAK GitHub release
         - Existing app update / 앱 내부 업데이트
         - Other or unknown / 기타 또는 모름
     validations:

@@ -1,6 +1,8 @@
 # PCssak Palette - 공식 Windows 다운로드
 
-[English](README.md) · [제품 홈페이지](https://pcssak.co.kr/palette) · [사용설명서](https://pcssak.co.kr/guide) · [최신 릴리스](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
+**언어:** [English](README.md) · 한국어
+
+[제품 홈페이지](https://pcssak.co.kr/palette) · [사용설명서](https://pcssak.co.kr/guide) · [최신 릴리스](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
 
 **색을 추측하지 않고 접근성까지 고려한 색상 시스템을 만듭니다.** HEX 색 하나 또는 내
 PC의 이미지에서 11단계 OKLCH 램프를 만들고, 대비와 색각이상 혼동 위험을 확인한 뒤

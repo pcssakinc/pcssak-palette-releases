@@ -1,6 +1,8 @@
 # PCssak Palette - Official Windows Downloads
 
-[한국어](README.ko.md) · [Product website](https://pcssak.com/palette) · [User guide](https://pcssak.com/guide) · [Latest release](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
+**Languages:** English · [한국어](README.ko.md)
+
+[Product website](https://pcssak.com/palette) · [User guide](https://pcssak.com/guide) · [Latest release](https://github.com/pcssakinc/pcssak-palette-releases/releases/latest)
 
 **Build an accessible-minded color system without guessing.** Start from one HEX color or a
 local image, generate an 11-step OKLCH ramp, review contrast and approximate color-vision

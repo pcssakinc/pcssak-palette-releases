@@ -20,7 +20,11 @@
 
 ## Color interpretation
 
-- CVD views are approximate simulations, not individual measurement or medical diagnosis.
+- CVD views are approximate design-review simulations, not measurements or predictions of an
+  individual's perception and not medical diagnosis.
+- The transformed HEX values shown in a simulation card are display references for that model,
+  not recommended, saved, or exported replacement colors. They do not change the original
+  foreground/background pair.
 - Pair-risk distances are PCSSAK review heuristics, not WCAG or clinical thresholds.
 - Contrast applies to the indicated pair and does not certify an entire product as accessible.
 - The app does not judge beauty, culture, brand fit, or professional success.

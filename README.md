@@ -40,11 +40,16 @@ Read the full [project story](docs/PROJECT-STORY.md).
 
 1. Enter a HEX color or extract dominant colors from a local PNG, JPEG, WebP, GIF, or BMP.
 2. Generate a deterministic OKLCH ramp with steps from 50 through 950.
-3. Review WCAG contrast, light/dark UI previews, approximate protan/deutan/tritan/monochrome
-   views, Palette Doctor findings, and semantic role-color confusion risks.
+3. Review conditional black/white text guidance for the generated ramp and Palette Doctor
+   findings without changing the generated colors.
 4. Check an actual foreground/background pair against AA and AAA, then compare non-destructive
-   correction candidates that clearly identify which color would change.
-5. Copy or save CSS/OKLCH CSS, store up to 10 palettes, and back up the library as JSON.
+   correction candidates and approximate original, protan-type and deutan-type red-green,
+   tritan-type blue-yellow color-vision-deficiency, and grayscale reference views calculated
+   from that same pair.
+5. In the separate Early Access UI color-system workspace, edit seven role colors and review
+   contrast, duplicate HEX assignments, approximate color-vision confusion, and grayscale
+   lightness without silently changing the actual two-color check.
+6. Copy or save CSS/OKLCH CSS, store up to 10 palettes, and back up the library as JSON.
 
 Pro purchasing is **not available** in the public beta. Future Pro is reserved for batch role
 repair, full contrast matrices, reports, advanced framework/token formats, ASE, Export Pack,
@@ -82,7 +87,10 @@ The detailed acceptance rules are public in the
 - Officially verified environment: Windows 11 Home/Pro x64 with current updates.
 - Beta test support: Windows 10 Home/Pro 22H2 x64 and x86.
 - Not currently shipped: native ARM64, Windows S mode, macOS, or Linux.
-- CVD views are approximations, not medical diagnosis.
+- CVD views are design-review approximations, not measurements or exact predictions of an
+  individual's perception and not medical diagnosis. Their transformed HEX values are display
+  output from the approximate model, not replacement, recommended, saved, or exported colors;
+  the original input pair remains unchanged.
 - Contrast results apply to the indicated pair; they are not whole-product accessibility
   certification.
 - Interfaces, translations, and file behavior may change before 1.0, and undiscovered defects
